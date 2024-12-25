@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .image-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 0; /* 移除图片间的空隙 */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block; /* 移除图片底部的空白间隙 */
+        }
+
+        /* 电脑端样式 */
+        @media screen and (min-width: 720px) {
+            .image-container {
+                max-width: 720px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://km.sankuai.com/api/file/cdn/2663812786/141706279394?contentType=1&isNewContent=false" alt="图片1">
+        <img src="https://km.sankuai.com/api/file/cdn/2663812786/141713415651?contentType=1&isNewContent=false" alt="图片2">
+        <img src="https://km.sankuai.com/api/file/cdn/2663812786/141759387838?contentType=1&isNewContent=false" alt="图片3">
+        <img src="https://km.sankuai.com/api/file/cdn/2663812786/141773113929?contentType=1&isNewContent=false" alt="图片4">
+        <img src="https://km.sankuai.com/api/file/cdn/2663812786/141773000666?contentType=1&isNewContent=false" alt="图片5">
+    </div>
+</body>
+</html> 
